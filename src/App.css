@@ -1,0 +1,11 @@
+/* src/App.css */
+.app {
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

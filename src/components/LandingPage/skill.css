@@ -1,0 +1,123 @@
+
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    padding: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+    animation: glide 1.5s ease-out;
+}
+
+.description {
+    text-align: center;
+    color: white;
+    margin-bottom: 32px;
+    max-width: 500px;
+    animation: glide 1.5s ease-out;
+}
+
+/* Skills container */
+.skills-container {
+    width: 100%;
+    max-width: 800px;
+    animation: glide 1.5s ease-out;
+}
+
+.skill {
+    margin-bottom: 16px;
+    animation: glide 1.5s ease-out;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    color: white;
+    animation: glide 1.5s ease-out;
+}
+
+.progress-bar {
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    height: 10px;
+    width: 100%;
+    animation: glide 1.5s ease-out;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 9999px;
+    animation: glide 1.5s ease-out;
+}
+
+/* Skill-specific progress bar colors */
+.html {
+    width: 60%;
+    background-color: #f97316;
+    animation: glide 1.5s ease-out;
+}
+
+.css {
+    width: 70%;
+    background-color: #a855f7;
+    animation: glide 1.5s ease-out;
+}
+
+.javascript {
+    width: 80%;
+    background-color: #facc15;
+    animation: glide 1.5s ease-out;
+}
+
+.react {
+    width: 80%;
+    background-color: #3b82f6;
+    animation: glide 1.5s ease-out;
+}
+
+.linux {
+    width: 60%;
+    background-color: #ef4444;
+    animation: glide 1.5s ease-out;
+}
+
+.cpp{
+    background-color: #1aff00;
+    animation: glide 1.5s ease-out;
+}
+
+.python{
+    background-color:pink;
+    animation: glide 1.5s ease-out;
+}
+
+.node {
+    background-color:rgb(255, 0, 43);
+    animation: glide 1.5s ease-out;
+}
+
+.uiux {
+    background-color:purple;
+    animation: glide 1.5s ease-out;
+}
+
+@media (max-width: 900px) {
+    .progress-bar {
+        /* padding-left: 5px;
+        padding-right: 5px; */
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
