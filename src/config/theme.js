@@ -1,21 +1,21 @@
 // Theme configuration objects for color schemes
 export const themeConfig = {
   light: {
-    primary: '#3B82F6',
-    secondary: '#10B981',
-    accent: '#8B5CF6',
+    primary: '#2563EB',
+    secondary: '#059669',
+    accent: '#7C3AED',
     background: '#FFFFFF',
-    surface: '#F8FAFC',
+    surface: '#F0F4F8',
     surfaceElevated: '#FFFFFF',
-    text: '#1F2937',
-    textSecondary: '#6B7280',
-    textMuted: '#9CA3AF',
-    border: '#E5E7EB',
-    borderLight: '#F3F4F6',
-    success: '#10B981',
-    warning: '#F59E0B',
-    error: '#EF4444',
-    info: '#3B82F6'
+    text: '#111827',
+    textSecondary: '#4B5563',
+    textMuted: '#6B7280',
+    border: '#D1D5DB',
+    borderLight: '#E5E7EB',
+    success: '#059669',
+    warning: '#D97706',
+    error: '#DC2626',
+    info: '#2563EB'
   },
   dark: {
     primary: '#60A5FA',

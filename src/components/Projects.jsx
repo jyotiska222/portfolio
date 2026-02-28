@@ -141,6 +141,45 @@ const Projects = () => {
       featured: false,
       difficulty: "Advanced",
       duration: "1 month"
+    },
+    {
+      id: 7,
+      title: "UrjaLytics",
+      description: "AI-driven FRA transformer fault-diagnostics system using multi-source data ingestion, Random Forest models trained on synthetic data, and baseline/sister-transformer comparison delivered via Flask APIs and React dashboard.",
+      icon: "robot",
+      technologies: ["Python", "Flask", "React", "Scikit-learn", "Pandas", "NumPy"],
+      category: "ml",
+      github: "https://github.com/jyotiska222/UrjaLytics_SIH25190",
+      live: null,
+      featured: true,
+      difficulty: "Advanced",
+      duration: "2 months"
+    },
+    {
+      id: 8,
+      title: "SkillzzyFi",
+      description: "Decentralized skill exchange DApp with frontend-backend integration, wallet connectivity, content discovery UI, and smart contract interaction flows for StatusCode 2 Hackathon.",
+      icon: "globe",
+      technologies: ["React", "Node.js", "Flask", "Solidity", "Web3.js", "IPFS"],
+      category: "fullstack",
+      github: "https://github.com/jyotiska222/SkillzzyFi",
+      live: null,
+      featured: true,
+      difficulty: "Advanced",
+      duration: "48 hours"
+    },
+    {
+      id: 11,
+      title: "Goal Tracker",
+      description: "Full-stack productivity platform with OAuth authentication, REST APIs, timezone handling, and production deployment for goal and habit tracking.",
+      icon: "target",
+      technologies: ["React", "Flask", "MongoDB", "Google OAuth"],
+      category: "fullstack",
+      github: "https://github.com/jyotiska222/Goal-Tracker",
+      live: null,
+      featured: true,
+      difficulty: "Intermediate",
+      duration: "1 month"
     }
     // ,
     // {
@@ -191,12 +230,15 @@ const Projects = () => {
 
           {/* Project Icon */}
           <div className="group-hover:scale-110 transition-transform duration-500 relative z-10 drop-shadow-lg flex justify-center">
-            {project.icon === 'shopping-cart' && <ShoppingCartIcon className="w-20 h-20 text-primary" />}
-            {project.icon === 'clipboard' && <ClipboardIcon className="w-20 h-20 text-secondary" />}
-            {project.icon === 'cloud' && <CloudIcon className="w-20 h-20 text-accent" />}
-            {project.icon === 'plug' && <PlugIcon className="w-20 h-20 text-primary" />}
-            {project.icon === 'robot' && <RobotIcon className="w-20 h-20 text-accent" />}
-            {project.icon === 'credit-card' && <CreditCardIcon className="w-20 h-20 text-primary" />}
+            {project.icon === 'shopping-cart' && <ShoppingCartIcon className="w-16 h-16 text-primary" />}
+            {project.icon === 'clipboard' && <ClipboardIcon className="w-16 h-16 text-secondary" />}
+            {project.icon === 'cloud' && <CloudIcon className="w-16 h-16 text-accent" />}
+            {project.icon === 'plug' && <PlugIcon className="w-16 h-16 text-primary" />}
+            {project.icon === 'robot' && <RobotIcon className="w-16 h-16 text-accent" />}
+            {project.icon === 'credit-card' && <CreditCardIcon className="w-16 h-16 text-primary" />}
+            {project.icon === 'globe' && <GlobeIcon className="w-16 h-16 text-secondary" />}
+            {project.icon === 'target' && <TargetIcon className="w-16 h-16 text-primary" />}
+            {project.icon === 'cog' && <CogIcon className="w-16 h-16 text-secondary" />}
           </div>
 
           {/* Featured Badge */}
@@ -227,7 +269,7 @@ const Projects = () => {
         {/* Project Content */}
         <div className="p-4 sm:p-6">
           <div className="mb-4">
-            <h3 className="text-lg sm:text-xl font-bold text-text-primary mb-2 transition-all duration-300">
+            <h3 className="text-base sm:text-lg font-bold text-text-primary mb-2 transition-all duration-300">
               {project.title}
             </h3>
 
@@ -290,19 +332,19 @@ const Projects = () => {
   )
 
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 relative min-h-screen">
+    <section id="projects" className="py-20 px-6 sm:px-6 lg:px-8 relative min-h-screen">
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-6">
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center justify-center w-14 h-14 bg-primary rounded-full mb-5">
             <FolderIcon className="w-8 h-8 text-white" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-text-primary">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-text-primary">
             Featured Projects
           </h2>
-          <div className="w-24 h-1.5 bg-primary mx-auto rounded-full mb-4"></div>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto leading-relaxed">
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-3"></div>
+          <p className="text-text-secondary text-base max-w-2xl mx-auto leading-relaxed">
             A curated collection of my recent work showcasing diverse technologies and innovative solutions
           </p>
         </div>
@@ -333,7 +375,7 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6 mb-10 sm:mb-12">
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}

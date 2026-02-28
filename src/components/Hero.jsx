@@ -56,7 +56,7 @@ const Hero = () => {
   }
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative">
+    <section id="hero" className="min-h-screen sm:min-h-[105vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 relative">
 
       <div className="max-w-5xl mx-auto text-center relative z-10">
         {/* Enhanced greeting with icon */}
@@ -71,7 +71,7 @@ const Hero = () => {
 
         {/* Enhanced name with better gradient */}
         <div className="animate-slide-up opacity-0 animation-delay-500 animate-fill-forwards">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold mb-6 sm:mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 dark:from-blue-400 dark:via-purple-400 dark:to-blue-300 bg-clip-text text-transparent leading-tight px-2">
+          <h1 className="text-[33px] sm:text-[39px] md:text-[53px] lg:text-[79px] font-extrabold mb-5 sm:mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 dark:from-blue-400 dark:via-purple-400 dark:to-blue-300 bg-clip-text text-transparent leading-tight px-2">
             Jyotiska Biswas
           </h1>
         </div>
@@ -80,7 +80,7 @@ const Hero = () => {
         <div className="animate-slide-up opacity-0 animation-delay-700 animate-fill-forwards">
           <div className="h-16 sm:h-20 flex items-center justify-center mb-6 sm:mb-8 px-4">
             <div className="relative">
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-700 dark:text-gray-300 relative text-center">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-700 dark:text-gray-300 relative text-center">
                 <span className="relative z-10">{displayText}</span>
                 <span className="animate-pulse text-blue-500 ml-1 relative z-10">|</span>
                 {/* Animated underline */}
@@ -92,7 +92,7 @@ const Hero = () => {
 
         {/* Enhanced description */}
         <div className="animate-slide-up opacity-0 animation-delay-900 animate-fill-forwards">
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed font-light px-4 text-center">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-10 max-w-3xl mx-auto leading-relaxed font-light px-4 text-center">
             Driven 3rd-year IT student skilled in <span className="font-semibold text-blue-600 dark:text-blue-400">full-stack development</span> and
             <span className="font-semibold text-purple-600 dark:text-purple-400"> machine learning</span>. Building real-world solutions through projects and hackathons.
           </p>

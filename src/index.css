@@ -5,21 +5,21 @@
 /* Theme CSS Custom Properties */
 :root {
   /* Light theme colors */
-  --color-primary: #3B82F6;
-  --color-secondary: #10B981;
-  --color-accent: #8B5CF6;
+  --color-primary: #2563EB;
+  --color-secondary: #059669;
+  --color-accent: #7C3AED;
   --color-background: #FFFFFF;
-  --color-surface: #F8FAFC;
+  --color-surface: #F0F4F8;
   --color-surfaceElevated: #FFFFFF;
-  --color-text: #1F2937;
-  --color-textSecondary: #6B7280;
-  --color-textMuted: #9CA3AF;
-  --color-border: #E5E7EB;
-  --color-borderLight: #F3F4F6;
-  --color-success: #10B981;
-  --color-warning: #F59E0B;
-  --color-error: #EF4444;
-  --color-info: #3B82F6;
+  --color-text: #111827;
+  --color-textSecondary: #4B5563;
+  --color-textMuted: #6B7280;
+  --color-border: #D1D5DB;
+  --color-borderLight: #E5E7EB;
+  --color-success: #059669;
+  --color-warning: #D97706;
+  --color-error: #DC2626;
+  --color-info: #2563EB;
 }
 
 .dark {
@@ -283,6 +283,17 @@ textarea:focus-visible {
   0%, 100% { transform: rotate(0deg); }
   25% { transform: rotate(20deg); }
   75% { transform: rotate(-20deg); }
+}
+
+@keyframes fadeInScale {
+  from { 
+    opacity: 0; 
+    transform: scale(0.8); 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
 }
 
 .animate-fade-in { animation: fade-in 1s ease-out; }

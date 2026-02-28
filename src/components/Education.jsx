@@ -16,18 +16,37 @@ const Education = () => {
             ],
             gpa: "Currently pursuing",
             achievements: [
+                "Smart India Hackathon 2025 Finalist (Power Grid Track)",
                 "Active participant in competitive programming",
-                "Multiple hackathon participations (Hack4Bengal 2024, FrostHack 2024)",
+                "Multiple hackathon participations (Hack4Bengal 2024, FrostHack 2024, StatusCode 2)",
                 "Built real-world projects with modern tech stack"
+            ]
+        },
+        {
+            degree: "Higher Secondary (Class XII)",
+            institution: "Barrackpore Government High School",
+            period: "2021 - 2022",
+            location: "West Bengal, India",
+            description: "Secondary education with strong foundational knowledge in science and mathematics.",
+            coursework: [
+                "Physics",
+                "Chemistry",
+                "Mathematics",
+                "Biology"
+            ],
+            gpa: "Completed",
+            achievements: [
+                "WBJEE AIR 7431 (West Bengal Joint Entrance Examination)",
+                "Strong foundation in science and quantitative reasoning"
             ]
         }
     ]
 
     return (
-        <section id="education" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <section id="education" className="py-20 px-6 sm:px-6 lg:px-8 relative">
             <div className="max-w-6xl mx-auto relative z-10">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+                <div className="text-center mb-12">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-3 text-gray-900 dark:text-white">
                         Education
                     </h2>
                     <div className="w-20 h-1 bg-blue-600 dark:bg-blue-400 mx-auto rounded-full"></div>
@@ -36,10 +55,10 @@ const Education = () => {
                     </p>
                 </div>
 
-                <div className="max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
                     {education.map((edu, index) => (
-                        <div key={index} className="mb-6 sm:mb-8">
-                            <div className="bg-surface border border-border-color rounded-xl p-4 sm:p-6 lg:p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/30">
+                        <div key={index}>
+                            <div className="bg-surface border border-border-color rounded-xl p-4 sm:p-6 lg:p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/30 h-full">
                                 {/* Header */}
                                 <div className="mb-4 sm:mb-6">
                                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-3">

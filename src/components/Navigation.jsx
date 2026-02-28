@@ -117,12 +117,12 @@ const Navigation = () => {
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-surface/95 backdrop-blur-md border-t border-border-color">
+          <div className="px-2 pt-2 pb-4 space-y-1 sm:space-y-2 bg-surface/95 backdrop-blur-md border-t border-border-color">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavigation(item)}
-                className={`block px-3 py-2 text-base font-medium w-full text-left transition-colors rounded-lg ${activeSection === item.id && !item.external
+                className={`block px-3 py-2 text-sm sm:text-base font-medium w-full text-left transition-colors rounded-lg ${activeSection === item.id && !item.external
                   ? 'text-primary bg-primary/10'
                   : 'text-text-secondary hover:text-text-primary hover:bg-surface-elevated'
                   }`}
@@ -130,6 +130,9 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            <div className="px-3 py-2 border-t border-border-color mt-2 pt-3">
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       )}

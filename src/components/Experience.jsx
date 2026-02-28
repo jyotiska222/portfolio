@@ -1,57 +1,70 @@
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Software Engineer",
-      company: "TechCorp Inc.",
-      period: "2022 - Present",
-      location: "San Francisco, CA",
-      description: "Leading a team of 5 developers in building scalable microservices architecture. Implemented CI/CD pipelines that reduced deployment time by 60%.",
-      technologies: ["React", "Node.js", "AWS", "Docker", "Kubernetes"],
+      title: "Software Developer",
+      company: "Smart India Hackathon 2025",
+      period: "2025",
+      location: "India",
+      description: "Built an AI-based FRA system for transformer health monitoring. Developed a Random Forest model trained on synthetic ideal-condition data for fault diagnostics, advancing grid reliability.",
+      technologies: ["Python", "Flask", "React", "Scikit-learn", "AI/ML"],
       achievements: [
-        "Architected and deployed 15+ microservices handling 1M+ daily requests",
-        "Mentored junior developers and conducted technical interviews",
-        "Reduced system downtime by 40% through improved monitoring and alerting"
+        "Finalist in Smart India Hackathon 2025 — Power Grid track",
+        "Designed AI-driven transformer fault-diagnostics system",
+        "Implemented multi-source data ingestion and baseline comparison algorithms"
+      ]
+    },
+    {
+      title: "Frontend / Web3 Developer",
+      company: "Hack4Bengal 2024",
+      period: "2024",
+      location: "Remote",
+      description: "Developed frontend and wallet integration for CrowdFundX, a decentralized crowdfunding platform. Implemented MetaMask connectivity and blockchain transaction handling.",
+      technologies: ["React", "Ethers.js", "MetaMask", "Web3.js", "Solidity"],
+      achievements: [
+        "Built responsive UI for decentralized crowdfunding platform",
+        "Integrated wallet connectivity and transaction management",
+        "Deployed on Avalanche Fuji Testnet with full Web3 functionality"
       ]
     },
     {
       title: "Full Stack Developer",
-      company: "StartupXYZ",
-      period: "2020 - 2022",
+      company: "FrostHack 2024",
+      period: "2024",
       location: "Remote",
-      description: "Developed and maintained multiple client-facing applications using modern web technologies. Collaborated closely with design and product teams.",
-      technologies: ["Vue.js", "Python", "PostgreSQL", "Redis", "GCP"],
+      description: "Built UI and search workflows for a location-based healthcare discovery platform. Created responsive interface for finding doctors and medicines with real-time availability.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Flask"],
       achievements: [
-        "Built responsive web applications serving 100K+ users",
-        "Optimized database queries resulting in 50% faster load times",
-        "Implemented real-time features using WebSocket technology"
+        "Developed location-based search functionality with real-time updates",
+        "Integrated healthcare provider discovery and booking systems",
+        "Built responsive UI handling complex healthcare workflows"
       ]
     },
     {
-      title: "Software Developer",
-      company: "Digital Solutions Ltd.",
-      period: "2019 - 2020",
-      location: "New York, NY",
-      description: "Worked on enterprise-level applications and internal tools. Focused on backend development and API design.",
-      technologies: ["Java", "Spring Boot", "MySQL", "Jenkins", "Linux"],
+      title: "Open Source Contributor",
+      company: "SkillzzyFi (StatusCode 2)",
+      period: "2024",
+      location: "Remote",
+      description: "Contributed to frontend and backend modules of a decentralized skill exchange DApp. Implemented core features via GitHub pull requests and maintained code quality.",
+      technologies: ["React", "Node.js", "Flask", "Solidity", "Web3.js"],
       achievements: [
-        "Developed RESTful APIs used by 10+ internal applications",
-        "Automated manual processes saving 20+ hours per week",
-        "Maintained 99.9% uptime for critical business applications"
+        "Contributed to decentralized skill exchange platform",
+        "Implemented frontend-backend integration and wallet connectivity",
+        "Delivered content discovery UI and smart contract interactions"
       ]
     }
   ]
 
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+    <section id="experience" className="py-20 px-6 sm:px-6 lg:px-8 relative">
 
       <div className="max-w-6xl mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-            Work Experience
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 text-gray-900 dark:text-white">
+            Project Engagements
           </h2>
           <div className="w-20 h-1 bg-blue-600 dark:bg-blue-400 mx-auto rounded-full"></div>
           <p className="text-text-secondary mt-4 max-w-2xl mx-auto">
-            My professional journey and key contributions in various roles
+            My hands-on contributions to hackathons, competitions, and collaborative projects
           </p>
         </div>
 

@@ -41,6 +41,12 @@ const Contact = () => {
       link: 'mailto:j.biswas0022@gmail.com'
     },
     {
+      icon: 'mail',
+      label: 'College Email',
+      value: 'jyotiska.biswas.it2023@kgec.ac.in',
+      link: 'mailto:jyotiska.biswas.it2023@kgec.ac.in'
+    },
+    {
       icon: 'phone',
       label: 'Phone',
       value: '+91-6290****29',
@@ -56,56 +62,56 @@ const Contact = () => {
       icon: 'linkedin',
       label: 'LinkedIn',
       value: 'Jyotiska Biswas',
-      link: 'https://www.linkedin.com/in/jyotiska-biswas-019b75290/'
+      link: 'https://www.linkedin.com/in/jyotiskabiswas/'
     }
   ]
 
   const socialLinks = [
     { name: 'GitHub', icon: 'github', url: 'https://github.com/jyotiska222' },
-    { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/in/jyotiska-biswas-019b75290/' },
-    { name: 'Twitter', icon: 'twitter', url: 'https://www.linkedin.com/in/jyotiska-biswas-019b75290/' }
+    { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/in/jyotiskabiswas/' },
+    { name: 'Twitter', icon: 'twitter', url: 'https://www.linkedin.com/in/jyotiskabiswas/' }
   ]
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+    <section id="contact" className="py-16 sm:py-20 px-6 sm:px-6 lg:px-8 relative">
 
       <div className="max-w-6xl mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-gray-900 dark:text-white">
             Get In Touch
           </h2>
           <div className="w-20 h-1 bg-blue-600 dark:bg-blue-400 mx-auto rounded-full"></div>
-          <p className="text-text-secondary mt-4 max-w-2xl mx-auto">
+          <p className="text-text-secondary mt-2 sm:mt-4 text-sm sm:text-base max-w-2xl mx-auto">
             I'm always interested in new opportunities and interesting projects. 
             Let's discuss how we can work together!
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 lg:items-start">
           {/* Contact Information */}
-          <div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-6 sm:mb-8">Let's Connect</h3>
+          <div className="lg:pr-4">
+            <h3 className="text-lg sm:text-xl font-semibold text-text-primary mb-4 sm:mb-6">Let's Connect</h3>
             
-            <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
+            <div className="space-y-3 sm:space-y-4 lg:space-y-6 mb-6 sm:mb-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-center space-x-3 sm:space-x-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    {info.icon === 'mail' && <MailIcon className="w-6 h-6 text-blue-600 dark:text-blue-400" />}
-                    {info.icon === 'phone' && <PhoneIcon className="w-6 h-6 text-green-600 dark:text-green-400" />}
-                    {info.icon === 'location' && <LocationIcon className="w-6 h-6 text-purple-600 dark:text-purple-400" />}
-                    {info.icon === 'linkedin' && <LinkedInIcon className="w-6 h-6 text-blue-700 dark:text-blue-300" />}
+                <div key={index} className="flex items-start sm:items-center space-x-2 sm:space-x-3 lg:space-x-4">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    {info.icon === 'mail' && <MailIcon className="w-5 sm:w-6 h-5 sm:h-6 text-blue-600 dark:text-blue-400" />}
+                    {info.icon === 'phone' && <PhoneIcon className="w-5 sm:w-6 h-5 sm:h-6 text-green-600 dark:text-green-400" />}
+                    {info.icon === 'location' && <LocationIcon className="w-5 sm:w-6 h-5 sm:h-6 text-purple-600 dark:text-purple-400" />}
+                    {info.icon === 'linkedin' && <LinkedInIcon className="w-5 sm:w-6 h-5 sm:h-6 text-blue-700 dark:text-blue-300" />}
                   </div>
-                  <div>
-                    <div className="text-text-secondary text-sm">{info.label}</div>
+                  <div className="flex-1 min-w-0">
+                    <div className="text-text-secondary text-xs sm:text-sm">{info.label}</div>
                     {info.link ? (
                       <a 
                         href={info.link}
-                        className="text-text-primary hover:text-primary transition-colors font-medium"
+                        className="text-text-primary hover:text-primary transition-colors font-medium text-sm break-all"
                       >
                         {info.value}
                       </a>
                     ) : (
-                      <div className="text-text-primary font-medium">{info.value}</div>
+                      <div className="text-text-primary font-medium text-sm break-words">{info.value}</div>
                     )}
                   </div>
                 </div>
@@ -147,8 +153,8 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-6 sm:mb-8">Send a Message</h3>
+          <div className="lg:pl-4">
+            <h3 className="text-lg sm:text-xl font-semibold text-text-primary mb-4 sm:mb-6">Send a Message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
@@ -239,8 +245,8 @@ const Contact = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-20 pt-8 border-t border-border-color text-center">
-          <p className="text-text-secondary">
+        <div className="mt-12 sm:mt-16 lg:mt-20 pt-6 sm:pt-8 border-t border-border-color text-center">
+          <p className="text-text-secondary text-xs sm:text-sm">
             © 2025 Jyotiska Biswas. Built with React, Tailwind CSS, and lots of coffee
           </p>
         </div>
