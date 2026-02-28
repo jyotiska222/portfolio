@@ -3,10 +3,10 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.jyotiska.tech/sitemap.xml
+Sitemap: https://jyotiska.tech/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
 
 # Host
-Host: https://www.jyotiska.tech
+Host: https://jyotiska.tech
